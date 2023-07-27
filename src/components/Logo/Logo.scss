@@ -1,0 +1,9 @@
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: #444;
+  & > span {
+    color: #00b7ff;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../_variables.scss';
+
+.header {
+  width: 100vw;
+  background: rgba(252, 252, 252, 0.1);
+}
+
+.header__bar {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 16px 10px;
+}
