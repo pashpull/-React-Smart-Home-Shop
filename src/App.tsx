@@ -13,13 +13,13 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <Provider store={store}>
-      <Header />
       <BrowserRouter basename="React-Smart-Home-Shop">
+        <Header />
         <Routes>
           <Route index element={<HomePage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </Provider>
   );
 }

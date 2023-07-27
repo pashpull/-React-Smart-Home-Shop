@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.phone {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.phone__number {
+  @include text-small;
+  color: $second-dark;
+}

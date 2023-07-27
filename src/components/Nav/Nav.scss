@@ -1,0 +1,16 @@
+@import '../../variables';
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.nav__item {
+  @include text-small;
+  text-decoration: none;
+  list-style: none;
+  & > a {
+    color: $second-dark;
+  }
+}

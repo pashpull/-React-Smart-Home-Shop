@@ -3,9 +3,19 @@
 .header {
   width: 100vw;
   background: rgba(252, 252, 252, 0.1);
+  & .logo,
+  .header__phone {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  & .header__phone {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .header__bar {
+  display: flex;
   max-width: 1330px;
   margin: 0 auto;
   padding: 16px 10px;
