@@ -15,9 +15,11 @@ function App() {
     <Provider store={store}>
       <BrowserRouter basename="React-Smart-Home-Shop">
         <Header />
-        <Routes>
-          <Route index element={<HomePage />} />
-        </Routes>
+        <div className="main">
+          <Routes>
+            <Route index element={<HomePage />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </Provider>

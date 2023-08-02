@@ -1,0 +1,66 @@
+@import './../../variables';
+
+.slider-calc-price {
+  width: 211px;
+  height: 79px;
+  border-radius: 45px;
+  background-color: $second-dark;
+  padding: 10px;
+  padding-right: 22px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: end;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: $slider-on-color;
+    .slider-calc-price__control {
+      left: 142px;
+      transform: rotate(-45deg);
+    }
+    .slider-calc-price__text {
+      filter: blur(1px);
+    }
+  }
+}
+
+.slider-calc-price__control {
+  z-index: 100;
+  height: 59px;
+  width: 59px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fc891c, #f6fcff);
+  position: absolute;
+  left: 10px;
+  transition: all 0.4s ease;
+}
+
+.slider-calc-price__arrow-top,
+.slider-calc-price__arrow-bot {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 17px;
+  background-color: $second-dark;
+  left: 38%;
+}
+
+.slider-calc-price__arrow-top {
+  top: 40.5%;
+  transform: rotate(45deg);
+}
+
+.slider-calc-price__arrow-bot {
+  top: 59.5%;
+  transform: rotate(-45deg);
+}
+
+.slider-calc-price__text {
+  @include text-button;
+  display: block;
+  width: min-content;
+  justify-content: end;
+  color: #fff;
+  user-select: none;
+}

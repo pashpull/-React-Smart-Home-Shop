@@ -7,11 +7,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #eeeeee;
+}
+
 a {
   text-decoration: none;
 }
 
 h1 {
+  margin: 0;
   font-size: 68px;
   font-weight: 700;
   line-height: 66px;
@@ -39,4 +44,12 @@ h3 {
     font-size: 30px;
     line-height: normal;
   }
+}
+
+.main {
+  // position: relative;
+  // z-index: 5;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;
 }

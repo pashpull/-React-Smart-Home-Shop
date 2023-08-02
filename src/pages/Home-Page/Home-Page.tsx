@@ -1,7 +1,12 @@
 import './Home-Page.scss';
+import Preview from './Preview/Preview';
 
 const HomePage = () => {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <Preview />
+    </>
+  );
 };
 
 export default HomePage;

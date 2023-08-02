@@ -2,9 +2,39 @@ $main-dark: #2a2a2a;
 $second-dark: #444;
 $light-dark: #a4a4a4;
 $action-color: #ffa34c;
+$light: #ebe7e6;
+$main-light: #eeeeee;
+$slider-on-color: #34c759;
+$slider-off-color: #e8e8e8;
 
 @mixin text-small {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+}
+
+@mixin text-medium {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  @media (max-width: 942px) {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+@mixin text-extra-large {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  @media (max-width: 942px) {
+    font-size: 17px;
+    line-height: normal;
+  }
+}
+
+@mixin text-button {
+  font-size: 17px;
+  line-height: normal;
+  font-weight: 600;
 }
