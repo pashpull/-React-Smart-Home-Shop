@@ -1,0 +1,40 @@
+@import '../../../../_variables.scss';
+
+.function-card {
+  position: relative;
+  background-color: $light;
+  border-radius: 30px;
+  padding: 52px 60px;
+  min-height: 343px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-grow: 1;
+  @media (max-width: 1115px) {
+    padding: 35px;
+  }
+  @media (max-width: 970px) {
+    padding: 20px;
+    max-width: 100% !important;
+  }
+  @media (max-width: 768px) {
+    min-height: 260px;
+  }
+}
+
+.function-card__title {
+  margin-bottom: 16px;
+}
+
+.function-card__list {
+  list-style-position: inside;
+  color: $second-dark;
+  max-width: 340px;
+}
+
+.function-card__img {
+  position: absolute;
+  & img {
+    width: 100%;
+  }
+}

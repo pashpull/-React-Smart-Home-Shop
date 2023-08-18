@@ -1,0 +1,28 @@
+@import '../../_variables';
+
+.section-header {
+  margin: 80px auto 64px;
+  max-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media (max-width: 942px) {
+    max-width: 280px;
+  }
+  @media (max-width: 770px) {
+    margin: 64px auto 40px;
+  }
+}
+
+.section-header__tag {
+  padding: 6px 14px;
+  border-radius: 16px;
+  background-color: $light;
+  color: $second-dark;
+}
+
+.section-header__text {
+  color: $second-dark;
+}

@@ -1,0 +1,22 @@
+@import '../../../../variables';
+
+.preview-offer-position {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  .preview-card {
+    position: absolute;
+    transition: all 0.1s ease-in;
+    transform: rotateX(90deg);
+    bottom: 65px;
+    z-index: 100;
+  }
+  &_active {
+    .preview-card {
+      transform: rotateX(0);
+    }
+  }
+}

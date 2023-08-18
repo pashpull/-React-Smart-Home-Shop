@@ -1,0 +1,33 @@
+@import '../../_variables.scss';
+
+.button {
+  width: fit-content;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+  @include text-button;
+  &_accent {
+    background-color: $action-color;
+    color: $main-dark;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $hover-accent-btn-color;
+      }
+    }
+  }
+  &_dark {
+    background-color: $second-dark;
+    color: #fff;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $main-dark;
+      }
+    }
+  }
+  @media (hover: hover) {
+    & {
+      cursor: pointer;
+    }
+  }
+}

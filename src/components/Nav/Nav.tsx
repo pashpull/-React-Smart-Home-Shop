@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import './Nav.scss';
 
 const Nav = () => {
@@ -6,25 +7,39 @@ const Nav = () => {
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="/about">Функционал</Link>
+          <Link to="/functional" className="nav__link">
+            Функционал
+          </Link>
         </li>
         <li className="nav__item">
-          <Link to="/">Оборудование</Link>
+          <Link to="/equipment" className="nav__link">
+            Оборудование
+          </Link>
         </li>
         <li className="nav__item">
-          <Link to="/">Комплексные решения</Link>
+          <Link to="/complexSolutions" className="nav__link">
+            Комплексные решения
+          </Link>
         </li>
         <li className="nav__item">
-          <Link to="/">Услуги и цены</Link>
+          <Link to="/servicesAndPrices" className="nav__link">
+            Услуги и цены
+          </Link>
         </li>
         <li className="nav__item">
-          <Link to="/">Проекты</Link>
+          <Link to="/projects" className="nav__link">
+            Проекты
+          </Link>
         </li>
         <li className="nav__item">
-          <Link to="/">О нас</Link>
+          <Link to="/about" className="nav__link">
+            О нас
+          </Link>
         </li>
         <li className="nav__item">
-          <Link to="/">Контакты</Link>
+          <Link to="/contacts" className="nav__link">
+            Контакты
+          </Link>
         </li>
       </ul>
     </nav>

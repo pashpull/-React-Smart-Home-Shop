@@ -1,9 +1,11 @@
 import './Phone.scss';
 
+import phoneIcon from './phone.svg';
+
 const Phone = () => {
   return (
     <button className="phone">
-      <img src="phone.svg" alt="Phone icon" className="phone__icon" />
+      <img src={phoneIcon} alt="Phone" className="phone__icon" />
       <span className="phone__number">+7 (983) 285-36-57</span>
     </button>
   );

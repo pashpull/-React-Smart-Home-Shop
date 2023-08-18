@@ -1,7 +1,9 @@
 import SliderCalcPrice from '../../../UI/Slider-Calc-Price/Slider-Calc-Price';
 import './Preview.scss';
-import offerPositions from './../../../data/offer-positions';
-import OfferPosition from '../../../components/Offer-Position/Offer-Position';
+import previewCardsData from './preview-cards-data';
+import PreviewOfferPosition from './Preview-Offer-Position/Preview-Offer-Position';
+import PreviewCarousel from './Preview-Carousel/Preview-Carousel';
+import previewBcg from './preview-bcg.png';
 
 const Preview = () => {
   return (
@@ -15,13 +17,13 @@ const Preview = () => {
       </div>
 
       <div className="preview__bcg">
-        <img className="preview__bcg-img" src="./preview-bcg.png" />
+        <img className="preview__bcg-img" src={previewBcg} />
       </div>
 
       <div className="preview__offers">
-        {offerPositions.map((pos) => {
+        {previewCardsData.map((pos) => {
           return (
-            <OfferPosition
+            <PreviewOfferPosition
               key={pos.id}
               img={pos.img}
               title={pos.title}
@@ -32,6 +34,7 @@ const Preview = () => {
           );
         })}
       </div>
+      <PreviewCarousel offers={previewCardsData} />
     </div>
   );
 };

@@ -1,0 +1,78 @@
+@import '../../_variables.scss';
+
+.footer {
+  width: 100%;
+  background-color: $main-light;
+}
+
+.footer__bar {
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 80px 10px 123px;
+  justify-content: space-between;
+}
+
+.footer__info-block .logo {
+  margin-bottom: 40px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social-link {
+  cursor: pointer;
+}
+
+.footer__info {
+  max-width: 800px;
+  display: flex;
+}
+
+.footer__info-block {
+  flex-grow: 1;
+  flex-basis: 0;
+  color: $second-dark;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  & .phone__number {
+    @include text-medium;
+  }
+}
+
+.footer__info-title {
+  margin-bottom: 13px;
+}
+
+.footer__info-item {
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 11px;
+}
+
+.footer__info-text {
+  @include text-medium;
+}
+
+@media (max-width: 600px) {
+  .footer__bar {
+    padding: 80px 10px;
+  }
+  .footer__bar,
+  .footer__info {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+  }
+  .footer__info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0 !important;
+  }
+}

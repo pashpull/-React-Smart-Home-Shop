@@ -1,0 +1,50 @@
+@import '../../../../variables';
+
+.control-app-animation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &_on {
+    .pad-img,
+    .phone-img {
+      bottom: 0;
+    }
+    .watch-img {
+      bottom: -2px;
+    }
+  }
+}
+
+.control-app-animation__img {
+  position: absolute;
+  bottom: 0;
+}
+
+.pad-img {
+  width: 100%;
+  max-width: 315px;
+  left: 0;
+  bottom: -100%;
+  transition: bottom 0.3s ease-out;
+  min-width: 183px;
+}
+
+.phone-img {
+  right: 0;
+  max-width: 111px;
+  min-width: 64px;
+  width: 35%;
+  bottom: -100%;
+  transition: bottom 0.5s ease-out;
+}
+
+.watch-img {
+  max-width: 53px;
+  min-width: 30px;
+  width: 20%;
+  right: 27%;
+  bottom: -100%;
+  transition: bottom 0.7s ease-out;
+}

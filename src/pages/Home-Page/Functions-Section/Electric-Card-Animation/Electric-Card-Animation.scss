@@ -1,0 +1,62 @@
+@import '../../../../variables';
+
+.electric-card-animation {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  perspective: 1px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.electric-card-animation__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+
+.electric-card-animation__img {
+  position: absolute;
+  height: fit-content;
+  &:nth-child(1) {
+    transform: translateZ(-1px) scale(2);
+    top: -10%;
+    left: 20%;
+    width: 52%;
+  }
+  &:nth-child(2) {
+    transform: translateZ(-1.5px) scale(2.5);
+    top: -60%;
+    left: 112%;
+    width: 21%;
+  }
+  &:nth-child(3) {
+    transform: translateZ(-2px) scale(3);
+    top: -84%;
+    left: 22%;
+    width: 15%;
+  }
+  &:nth-child(4) {
+    transform: translateZ(-2.5px) scale(3.5);
+    top: 71%;
+    left: 153%;
+    width: 17%;
+  }
+  &:nth-child(5) {
+    transform: translateZ(-3px) scale(4);
+    top: -37%;
+    left: -92%;
+    width: 16%;
+  }
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+}

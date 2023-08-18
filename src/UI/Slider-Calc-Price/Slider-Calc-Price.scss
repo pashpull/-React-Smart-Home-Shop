@@ -13,14 +13,16 @@
   justify-content: end;
   transition: background-color 0.4s ease;
   cursor: pointer;
-  &:hover {
-    background-color: $slider-on-color;
-    .slider-calc-price__control {
-      left: 142px;
-      transform: rotate(-45deg);
-    }
-    .slider-calc-price__text {
-      filter: blur(1px);
+  @media (hover: hover) {
+    &:hover {
+      background-color: $slider-on-color;
+      .slider-calc-price__control {
+        left: 142px;
+        transform: rotate(-45deg);
+      }
+      .slider-calc-price__text {
+        filter: blur(1px);
+      }
     }
   }
 }

@@ -1,0 +1,68 @@
+@import '../../../variables';
+
+.functions-section {
+  color: $main-dark;
+}
+
+.functions-section__functions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+  & .function-card:nth-child(1) {
+    width: 100%;
+    .function-card__img {
+      top: 0;
+      right: 0;
+      width: 40%;
+      opacity: 0.2;
+    }
+  }
+  & .function-card:nth-child(2) {
+    max-width: 492px;
+    .function-card__img {
+      max-width: 230px;
+      width: 45%;
+      bottom: -5px;
+      right: 0;
+    }
+  }
+  & .function-card:nth-child(3) {
+    max-width: 604px;
+    .function-card__img {
+      width: 40%;
+      bottom: 0;
+      right: 21px;
+    }
+  }
+  & .function-card:nth-child(4) {
+    max-width: 604px;
+    .function-card__img {
+      width: 60%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  & .function-card:nth-child(5) {
+    max-width: 492px;
+    .function-card__img {
+      max-width: 230px;
+      width: 73%;
+      bottom: -4px;
+      right: 0;
+    }
+  }
+  & .function-card:nth-child(6) {
+    width: 100%;
+    .function-card__img {
+      width: 38%;
+      bottom: -4px;
+      right: 0;
+    }
+  }
+
+  @media (max-width: 990px) {
+    gap: 20px;
+  }
+}

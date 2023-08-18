@@ -1,0 +1,16 @@
+@import '../../../../variables';
+
+.control-scenarios-animation {
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.control-scenarios-animation__img {
+  max-width: 100%;
+  width: 84%;
+  height: 100%;
+}

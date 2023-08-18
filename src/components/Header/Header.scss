@@ -2,12 +2,26 @@
 
 .header {
   width: 100%;
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: url('./Vector.png'),
+      linear-gradient(156deg, rgba(0, 240, 255, 0) 0%, #00b2ff 100%),
+      linear-gradient(185deg, rgba(255, 153, 0, 0) 0%, #f90 100%);
+    opacity: 0.4;
+    background-position: right;
+  }
 }
 
 .header__bar-wrap {
   position: relative;
   z-index: 100;
-  background-color: #eeeeee;
+  background-color: $main-light;
   margin-bottom: 14px;
 }
 
@@ -31,20 +45,6 @@
 
 .header__bar .menu-btn {
   display: none;
-}
-
-.header__main-bcg {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  background: url('Vector.png'),
-    linear-gradient(156deg, rgba(0, 240, 255, 0) 0%, #00b2ff 100%),
-    linear-gradient(185deg, rgba(255, 153, 0, 0) 0%, #f90 100%);
-  opacity: 0.4;
-  background-position: right;
 }
 
 @media (max-width: 1182px) {

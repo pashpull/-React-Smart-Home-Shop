@@ -1,0 +1,22 @@
+@import '../../../../variables';
+
+.preview-card {
+  width: 310px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: rgba(#fff, 0.9);
+}
+
+.preview-card__content {
+  padding: 24px;
+}
+
+.preview-card__title {
+  @include text-extra-large;
+  margin-bottom: 12px;
+}
+
+.preview-card__text {
+  @include text-medium;
+  color: $light-dark;
+}

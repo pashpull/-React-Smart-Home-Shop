@@ -1,11 +1,13 @@
+$darkest: #2b2b2b;
 $main-dark: #2a2a2a;
 $second-dark: #444;
 $light-dark: #a4a4a4;
 $action-color: #ffa34c;
 $light: #ebe7e6;
-$main-light: #eeeeee;
+$main-light: #efefef;
 $slider-on-color: #34c759;
-$slider-off-color: #e8e8e8;
+$hover-accent-btn-color: #fc891c;
+$second-action-color: #00b7ff;
 
 @mixin text-small {
   font-size: 14px;

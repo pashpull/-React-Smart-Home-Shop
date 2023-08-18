@@ -8,19 +8,29 @@
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: #efefef;
+  // min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+
+$fons-breakpoint: 980px;
 
 h1 {
   margin: 0;
   font-size: 68px;
   font-weight: 700;
   line-height: 66px;
-  @media (max-width: 768px) {
+  @media (max-width: $fons-breakpoint) {
     font-size: 48px;
     line-height: normal;
   }
@@ -30,25 +40,35 @@ h2 {
   font-size: 48px;
   font-weight: 700;
   line-height: 46px;
-  @media (max-width: 768px) {
+  @media (max-width: $fons-breakpoint) {
     font-size: 30px;
     line-height: normal;
   }
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
-  line-height: 46px;
-  @media (max-width: 768px) {
-    font-size: 30px;
+  line-height: 36px;
+  @media (max-width: $fons-breakpoint) {
+    font-size: 28px;
+    font-weight: 700;
     line-height: normal;
   }
 }
 
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  @media (max-width: $fons-breakpoint) {
+    font-size: 24px;
+  }
+}
+
 .main {
-  // position: relative;
-  // z-index: 5;
+  flex-grow: 1;
+  width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 10px;

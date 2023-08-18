@@ -10,7 +10,9 @@
   @include text-small;
   text-decoration: none;
   list-style: none;
-  & > a {
-    color: $second-dark;
-  }
+  color: $second-dark;
+}
+
+.nav__link {
+  color: $second-dark;
 }

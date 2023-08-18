@@ -1,0 +1,48 @@
+@import '../../../../variables';
+
+.control-card {
+  width: 100%;
+  display: flex;
+  padding: 0 28px;
+  border-bottom: 1px solid $light-dark;
+  max-height: 236px;
+  overflow-y: clip;
+  &:nth-child(1) {
+    border-top: 1px solid $light-dark;
+  }
+}
+
+.control-card__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 0 28px;
+  border-right: 1px solid $light-dark;
+  padding-right: 16px;
+}
+
+.control-card__title {
+  max-width: min-content;
+}
+
+.control-card__text {
+  max-width: 310px;
+}
+
+.control-card__link {
+  color: $second-action-color;
+}
+
+.control-card__media-wrap {
+  padding-left: 16px;
+}
+
+@media (max-width: 536px) {
+  .control-card {
+    padding: 0;
+  }
+  .control-card__header {
+    padding: 20px 0 25px;
+  }
+}

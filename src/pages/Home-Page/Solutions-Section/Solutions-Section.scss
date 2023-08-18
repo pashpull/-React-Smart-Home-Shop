@@ -1,0 +1,21 @@
+@import '../../../variables';
+
+.solutions-section {
+  color: $main-dark;
+  max-width: 100%;
+}
+
+.solutions-section__cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 680px) {
+  .solutions-section__cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

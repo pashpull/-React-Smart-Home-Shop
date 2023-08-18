@@ -8,7 +8,6 @@ import MenuBtn from '../../UI/Menu-Btn/Menu-Btn';
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__main-bcg"></div>
       <div className="header__bar-wrap">
         <div className="header__bar">
           <div className="header__logo">

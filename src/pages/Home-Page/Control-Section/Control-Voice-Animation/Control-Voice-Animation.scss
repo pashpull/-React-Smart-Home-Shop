@@ -1,0 +1,93 @@
+@import '../../../../variables';
+
+.control-voice-animation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  overflow: hidden;
+  &_on {
+    .first-station {
+      right: 10%;
+      bottom: 5%;
+    }
+    .second-station {
+      right: 15%;
+      bottom: 17%;
+    }
+
+    .third-station {
+      right: 33%;
+      bottom: 5%;
+    }
+    .siri-wrap {
+      right: 0;
+      bottom: 5%;
+    }
+  }
+}
+
+.control-voice-animation__img {
+  right: -150%;
+  position: absolute;
+  bottom: 0;
+}
+
+.first-station {
+  min-width: 229px;
+  width: 115%;
+
+  bottom: 5%;
+  transition: right 0.4s ease-out;
+}
+.second-station {
+  min-width: 67px;
+  width: 34%;
+
+  bottom: 17%;
+  transition: right 0.8s ease-out;
+}
+
+.third-station {
+  min-width: 59px;
+  width: 30%;
+  bottom: 5%;
+  transition: right 0.6s ease-out;
+}
+
+.siri-wrap {
+  bottom: 5%;
+  width: 30%;
+  min-width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.6s ease-out;
+}
+.siri-icon {
+  width: 100%;
+}
+
+@media (max-width: 458px) {
+  .control-voice-animation_on {
+    .first-station {
+      right: -10%;
+      bottom: 10%;
+    }
+    .second-station {
+      right: 0;
+      bottom: 18%;
+    }
+
+    .third-station {
+      right: 33%;
+      bottom: 12%;
+    }
+    .siri-wrap {
+      right: 0;
+      bottom: 5%;
+    }
+  }
+}

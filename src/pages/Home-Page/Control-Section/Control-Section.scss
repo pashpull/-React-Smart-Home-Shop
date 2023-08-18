@@ -1,0 +1,50 @@
+@import '../../../variables';
+.control-section {
+  display: flex;
+  margin-top: 80px;
+  height: min-content;
+  margin: 0;
+  @media (min-width: 840px) {
+    margin-top: 120px;
+    & .section-header {
+      height: fit-content;
+      position: sticky;
+      top: 10px;
+      gap: 22px;
+      max-width: 465px;
+      margin: 0;
+      text-align: start;
+      align-items: start;
+    }
+  }
+}
+.control-section__cards {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 869px;
+  & .control-card:nth-child(2n + 1) {
+    & .control-card__header {
+      min-width: 250px;
+      width: 54%;
+    }
+    & .control-card__media-wrap {
+      width: 46%;
+    }
+  }
+  & .control-card:nth-child(2n) {
+    & .control-card__header {
+      min-width: 210px;
+      width: 46%;
+    }
+    & .control-card__media-wrap {
+      width: 54%;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .control-section {
+    flex-direction: column;
+  }
+}
