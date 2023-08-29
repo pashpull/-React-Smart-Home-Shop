@@ -1,14 +1,16 @@
-import { useState } from 'react';
 import './Menu-Btn.scss';
+import { useAppDispatch, useAppSelector } from '../../hooks/hooksForRedux';
+import { setMenuState } from '../../store/slices/menuSlice';
 
 const MenuBtn = () => {
-  const [menuBtnState, setMenuBtnState] = useState(false);
+  const menuIsOpen = useAppSelector((state) => state.menu.isOpen);
+  const dispatch = useAppDispatch();
 
   const menuBtnHandler = () => {
-    setMenuBtnState(!menuBtnState);
+    dispatch(setMenuState());
   };
 
-  const menuBtnClassName = `menu-btn${menuBtnState ? ' menu-btn_active' : ''}`;
+  const menuBtnClassName = `menu-btn${menuIsOpen ? ' menu-btn_active' : ''}`;
 
   return (
     <button className={menuBtnClassName} onClick={menuBtnHandler}>

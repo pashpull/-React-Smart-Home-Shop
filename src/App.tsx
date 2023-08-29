@@ -1,5 +1,6 @@
 import { HashRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router';
+import { Provider } from 'react-redux';
 
 import 'normalize.css';
 import './App.scss';
@@ -14,27 +15,35 @@ import ServicesAndPricesPage from './pages/Services-And-Prices-Page/Services-And
 import ProjectsPage from './pages/Projects-Page/Projects-Page';
 import AboutPage from './pages/About-Page/About-Page';
 import ContactsPage from './pages/Contacts-Page/Contacts-Page';
+import Menu from './components/Menu/Menu';
+import { store } from './store/store';
 
 function App() {
   return (
     <HashRouter>
-      <Header />
-      <div className="main">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/functional" element={<FunctionalPage />} />
-          <Route path="/equipment" element={<EquipmentPage />} />
-          <Route path="/complexSolutions" element={<ComplexSolutionsPage />} />
-          <Route
-            path="/servicesAndPrices"
-            element={<ServicesAndPricesPage />}
-          />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-        </Routes>
-      </div>
-      <Footer />
+      <Provider store={store}>
+        <Header />
+        <Menu />
+        <div className="main">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/functional" element={<FunctionalPage />} />
+            <Route path="/equipment" element={<EquipmentPage />} />
+            <Route
+              path="/complexSolutions"
+              element={<ComplexSolutionsPage />}
+            />
+            <Route
+              path="/servicesAndPrices"
+              element={<ServicesAndPricesPage />}
+            />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Provider>
     </HashRouter>
   );
 }
